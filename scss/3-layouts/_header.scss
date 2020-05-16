@@ -1,0 +1,28 @@
+.l-header {
+  height: 130px;
+  display: flex;
+  grid-column: span 3;
+  background: $white;
+  justify-content: space-between;
+  align-items: center;
+
+  @include for-tablet-portrait-up() {
+    grid-column: 1 / -1;
+  }
+
+  @include for-phone-only() {
+    grid-column: 1 / -1;
+  }
+
+  &__logo {
+    margin-left: 85px;
+
+    @include for-tablet-portrait-up() {
+      margin-left: 35px;
+    }
+
+    @include for-phone-only() {
+      margin-left: 35px;
+    }
+  }
+}

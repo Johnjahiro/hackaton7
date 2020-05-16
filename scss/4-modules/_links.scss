@@ -1,0 +1,26 @@
+.see-more {
+  margin: 60px 0 30px 0;
+  display: block;
+  text-align: right;
+  font-size: em(16);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $btnSeeMore;
+}
+
+.slide {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: em(16);
+  color: $slideColor;
+
+  &__direction {
+    width: 100px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

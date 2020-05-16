@@ -1,0 +1,211 @@
+.card {
+  &__card {
+    width: 100%;
+    display: flex;
+
+    @include for-phone-only() {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__card-content {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    color: $metalBlue;
+    line-height: 46px;
+    font-weight: bold;
+    font-size: em(36);
+
+    @include for-tablet-portrait-up() {
+      font-size: em(28);
+    }
+
+    @include for-phone-only() {
+      font-size: em(20);
+    }
+  }
+
+  &__card-description {
+    text-align: justify;
+    font-size: em(16);
+    color: $articleContentColor;
+  }
+
+  &__card-info {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__author {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__author-name {
+    color: $articleAuthorColor;
+    font-size: em(14);
+    font-weight: bold;
+  }
+
+  &__author-date {
+    color: $articleDateColor;
+    font-size: em(14);
+    font-weight: normal;
+  }
+
+  &__icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__img {
+    @include for-phone-only() {
+      width: 100%;
+    }
+  }
+
+  &__more-cards {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @include for-phone-only() {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card--size {
+    width: 300px;
+    height: 500px;
+
+    @include for-phone-only() {
+      width: 100%;
+      height: 520px;
+    }
+  }
+
+  &__card-content--padding {
+    padding-right: 0;
+  }
+
+  &__image--size {
+    width: 100%;
+  }
+
+  &__card-title--size {
+    font-size: em(22);
+    line-height: 32px;
+  }
+
+  &__card--size-second {
+    margin-bottom: 30px;
+    @include for-phone-only() {
+      flex-direction: column;
+    }
+  }
+
+  &__card-content--padding-second {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  &__card-title--size-second {
+    font-size: em(18);
+    line-height: 18px;
+  }
+
+  &__card-description--size-second {
+    font-size: em(14);
+  }
+}
+
+.card-footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $greyLight;
+
+  &__card-1 {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &--direction {
+      @include for-phone-only() {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__content {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &--size {
+      width: 230px;
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: em(36);
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    color: $white;
+
+    @include for-phone-only() {
+      font-size: em(28);
+    }
+
+    &--size {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: em(28);
+    }
+  }
+
+  &--border {
+    border-bottom: none;
+    @include for-phone-only() {
+      margin-top: 200px;
+      height: auto;
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    color: $greyLight2;
+    opacity: 0.7;
+  }
+
+  &__list {
+    color: $whiteLight;
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+.l-main {
+  width: 100%;
+  height: auto;
+  grid-column: 2 / 3;
+  margin: 0 auto;
+  border-bottom: 2px solid $greyLight;
+
+  @include for-tablet-portrait-up() {
+    grid-column: 1 / -1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include for-phone-only() {
+    grid-column: 1 / -1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

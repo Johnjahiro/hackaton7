@@ -1,0 +1,12 @@
+.l-footer {
+  width: 93.5%;
+  height: auto;
+  margin-top: 90px;
+  background: $metalBlue;
+  grid-column: span 3;
+  border-top-right-radius: 200px;
+
+  @include for-phone-only() {
+    grid-column: 1 / -1;
+  }
+}

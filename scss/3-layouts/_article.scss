@@ -1,0 +1,12 @@
+.l-article {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  grid-column: 2 / 3;
+
+  @include for-tablet-portrait-up() {
+    grid-column: 1 / -1;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

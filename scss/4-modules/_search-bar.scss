@@ -1,0 +1,29 @@
+.search {
+  @include for-tablet-portrait-up() {
+    grid-column: 1 / -1;
+  }
+
+  @include for-phone-only() {
+    grid-column: 1 / -1;
+  }
+
+  &__search-bar {
+    margin: 60px 0;
+    position: relative;
+  }
+
+  &__icon-search {
+    position: absolute;
+    top: 25px;
+    left: 27px;
+  }
+
+  &__search {
+    width: 100%;
+    padding: 18px 0 18px 70px;
+    background-color: $greyLight2;
+    border-style: none;
+    outline: none;
+    border-radius: 10px;
+  }
+}

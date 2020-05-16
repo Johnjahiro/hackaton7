@@ -1,0 +1,67 @@
+.l-banner {
+  width: 100%;
+  grid-column: span 3;
+
+  @include for-tablet-portrait-up() {
+    grid-column: 1 / -1;
+  }
+
+  @include for-phone-only() {
+    grid-column: 1 / -1;
+  }
+
+  &__container {
+    width: inherit;
+    height: 100%;
+    position: relative;
+  }
+
+  &__content {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: em(44);
+    font-weight: normal;
+    color: $bannerTitle;
+
+    @include for-tablet-portrait-up() {
+      font-size: em(32);
+    }
+
+    @include for-phone-only() {
+      font-size: em(24);
+    }
+  }
+
+  &__subtitle {
+    width: 60%;
+    font-size: em(20);
+    font-weight: normal;
+    text-align: center;
+    color: $bannerSubTitle;
+
+    @include for-tablet-portrait-up() {
+      font-size: em(16);
+    }
+
+    @include for-phone-only() {
+      font-size: em(14);
+    }
+  }
+
+  &__banner {
+    width: 100%;
+
+    @include for-phone-only() {
+      height: 250px;
+    }
+  }
+}

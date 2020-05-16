@@ -1,0 +1,36 @@
+// ****************
+// Color Variables
+// ****************
+
+$metalBlue: #1f3f68;
+$grey: #727272;
+$greyLight: #b3b3b3;
+$greyLight2: #f4f4f4;
+$metalBlueLight: #548baa;
+$metalBlueLight2: #6d97af;
+$white: #fff;
+$whiteLight: rgba(#fff, 0.78);
+
+$browser-context: 16; // Default
+
+$articleTitleColor: $metalBlueLight;
+$articleAuthorColor: $metalBlue;
+$articleContentColor: $grey;
+$articleDateColor: $greyLight;
+$articleState: $metalBlue;
+$btnSeeMore: $metalBlueLight;
+$headerColor: $white;
+$bannerTitle: $white;
+$bannerSubTitle: $whiteLight;
+$searchColor: $greyLight2;
+$footerColor: $metalBlue;
+$mainLine: $grey;
+$slideColor: $metalBlueLight2;
+
+// ****************
+// BREAKPOINTS
+// ****************
+
+$breakpoint-tablet: 900px;
+$breakpoint-mobile: 440px;
+
